@@ -16,6 +16,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta charSet="UTF-8" />
+        <link rel="icon" type="image/x-icon" href="./public/faviconsf.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SauloViniciust</title>
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   );
