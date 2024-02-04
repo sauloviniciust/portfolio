@@ -8,8 +8,8 @@ const projectsData = [
   {
     id: 1,
     title: "BodyLife_Shop",
-    description: "Este é um projeto de uma loja virtual criada no curso de FullStack da escola CoderHouse.",
-    image: "/images/projects/1.png",
+    description: "This is an e-commerce project created on a fullstack course from coderhouse",
+    image: "/images/projects/bodyl.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/sauloviniciust/bodylife",
     previewUrl: "bodylife.vercel.app/",
@@ -17,20 +17,20 @@ const projectsData = [
   {
     id: 2,
     title: "Koan dj page",
-    description: "Project 2 description",
-    image: "/images/projects/bodylife.jpeg",
+    description: "dj/producer webpage",
+    image: "/images/projects/koan.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/sauloviniciust/koan",
     previewUrl: "https://koan.vercel.app/",
   },
   {
-    id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
-    image: "/images/projects/3.png",
+    id: 2,
+    title: "Spacechronix dj page",
+    description: "dj/producer webpage",
+    image: "/images/projects/spacechronix.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/sauloviniciust/spcx",
+    previewUrl: "https://spacechronix.vercel.app/",
   },
   // {
   //   id: 4,
@@ -43,21 +43,21 @@ const projectsData = [
   // },
   {
     id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
-    image: "/images/projects/5.png",
+    title: "Weatherly",
+    description: "This site provides meteorological informations",
+    image: "/images/projects/weatherly.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/sauloviniciust/weatherly",
+    previewUrl: "https://appweatherlyapp.netlify.app/#/current-location",
   },
   {
     id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
-    image: "/images/projects/6.png",
+    title: "Gitsearchub",
+    description: "Search for repositories from github",
+    image: "/images/projects/gitsearch.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/sauloviniciust/gitsearchub",
+    previewUrl: "https://gitsearchub.vercel.app/",
   },
 ];
 
@@ -81,10 +81,10 @@ const ProjectsSection = () => {
 
   return (
     <section id="projects">
-      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
+      <h2 className="text-center text-4xl font-bold text-cyan-700 mt-4 mb-8 md:mb-12">
         My Projects
       </h2>
-      <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
+      <div className="text-stone-500 flex flex-row justify-center items-center gap-2 py-6">
         <ProjectTag
           onClick={handleTagChange}
           name="All"

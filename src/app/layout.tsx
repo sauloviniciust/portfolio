@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta charSet="UTF-8" />
-        <link rel="icon" type="image/x-icon" href="./public/faviconsf.png" />
+        <link rel="icon" type="image/x-icon" href="faviconsf.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>SauloViniciust</title>
       </head>
