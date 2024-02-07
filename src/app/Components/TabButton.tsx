@@ -5,13 +5,11 @@ const variants = {
   default: { width: 0 },
   active: { width: "calc(100% - 0.75rem)" },
 };
-
 interface ITabProps {
   active: boolean;
   selectTab: MouseEventHandler<HTMLButtonElement> | undefined;
   children: ReactNode;
 }
-
 
 const TabButton: React.FC<ITabProps> = ({ active, selectTab, children }) => {
   const buttonClasses = active ? "text-cyan-700" : "text-stone-500";

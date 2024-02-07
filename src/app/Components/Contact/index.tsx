@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import { FaGithub, FaWhatsapp } from "react-icons/fa";
 import Link from "next/link";
-import Image from "next/image";
+import { FaLinkedin } from "react-icons/fa6";
+import { BiLogoGmail } from "react-icons/bi";
 
 const EmailSection = () => {
-
   return (
     <section
       id="contact"
@@ -20,49 +20,96 @@ const EmailSection = () => {
           open. Whether you have a question or just want to say hi, I&apos;ll
           try my best to get back to you!
         </p>
-        <div className="socials flex flex-row gap-2">
-          <Link href="github.com" >
-            <Image src="./github-icon.svg" alt="Github Icon" width={100} height={100} />
+        <div className="socials text-5xl text-stone-300 flex flex-row gap-2">
+			
+          <Link className="hover:text-cyan-700"
+		  href="https://github.com/sauloviniciust"
+		  target="blank">
+		  <FaGithub
+            />
           </Link>
-          <Link href="linkedin.com">
-            <Image src="./Linkedin-icon.svg" alt="Linkedin Icon"width={100} height={100} />
+          <Link className="hover:text-cyan-700" 
+		  href="https://www.linkedin.com/in/sauloviniciust/"
+		  target="blank">
+            <FaLinkedin
+            />
+          </Link>
+          <Link className="hover:text-cyan-700" 
+		  href="mailto:sauloviniciust@gmail.com"
+		  target="blank">
+            <BiLogoGmail
+            />
+          </Link>
+          <Link className="hover:text-cyan-700" 
+		  href="wa.link/fovx6s"
+		  target="blank">
+            <FaWhatsapp
+            />
           </Link>
         </div>
       </div>
       <section className="rounded-3xl container mx-auto" id="contato">
-				
-				<article className="p-6 shadow-2xl  border-4 rounded-3xl border-cyan-600 bg-cyan-950 bg-opacity-80 max-h-full rounded-b-2xl h-fit z-10">
-					<form className="space-y-4 text-cyan-500" action="https://formspree.io/f/xzbqjkjp" method="POST">
-						<div className="text-lg">
-							<div>
-								<label htmlFor="full-name" className="block">Name:</label>
-								<input type="text" name="full-name" placeholder="Enter your name..." required
-									className="w-full focus:outline-none px-4 mb-4 mt-2 py-2 bg-black rounded-lg" />
-							</div>
-							<div>
-								<label htmlFor="email" className="block ">Email:</label>
-								<input id="email" type="email" name="email" placeholder="Enter your email..." required
-									className="w-full focus:outline-none px-4 mb-4 mt-2 py-2 rounded-lg bg-black " />
-							</div>
-						</div>
-						{/* <div  className="text-xl">
+        <article className="p-6 shadow-2xl border-4 rounded-3xl border-cyan-600 bg-cyan-950 bg-opacity-80 max-h-full rounded-b-2xl h-fit z-10">
+          <form
+            className="space-y-4 text-cyan-500"
+            action="https://formspree.io/f/xzbqjkjp"
+            method="POST"
+          >
+            <div className="text-lg">
+              <div>
+                <label htmlFor="full-name" className="block">
+                  Name:
+                </label>
+                <input
+                  type="text"
+                  name="full-name"
+                  placeholder="Enter your name..."
+                  required
+                  className="w-full focus:outline-none px-4 mb-4 mt-2 py-2 bg-black rounded-lg"
+                />
+              </div>
+              <div>
+                <label htmlFor="email" className="block ">
+                  Email:
+                </label>
+                <input
+                  id="email"
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email..."
+                  required
+                  className="w-full focus:outline-none px-4 mb-4 mt-2 py-2 rounded-lg bg-black "
+                />
+              </div>
+            </div>
+            {/* <div  className="text-xl">
 							<label htmlFor="subject" className="block">Subject:</label>
 							<input type="text" name="subject" placeholder="Enter your subject ..." required
 								className="w-full text-xl focus:outline-none font-lighter px-4 mb-4 mt-2 py-2 rounded-lg bg-black " />
 						</div> */}
-						<div className="text-xl">
-							<label htmlFor="message"className="block ">Message:</label>
-							<textarea name="message"placeholder="Enter your message ..." required
-								className="w-full focus:outline-none px-4 mb-4 mt-2 py-2 rounded-lg bg-black "></textarea>
-						</div>
-						<div className="flex justify-center">
-							<button type="submit" className="bg-black font-ligther text-cyan-600 text-lg sm:text-xl p-12 py-2 px-4 rounded-3xl
-						hover:bg-cyan-700 hover:text-cyan-300 hover:shadow-2xl ">Submit</button>
-						</div>
-					</form>
-				
-			</article>
-		</section>
+            <div className="text-xl">
+              <label htmlFor="message" className="block ">
+                Message:
+              </label>
+              <textarea
+                name="message"
+                placeholder="Enter your message ..."
+                required
+                className="w-full focus:outline-none px-4 mb-4 mt-2 py-2 rounded-lg bg-black "
+              ></textarea>
+            </div>
+            <div className="flex justify-center">
+              <button
+                type="submit"
+                className="bg-black font-ligther text-orange-600 text-lg sm:text-xl p-12 py-2 px-4 rounded-3xl
+						hover:bg-cyan-700 hover:text-cyan-300 hover:shadow-2xl "
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+        </article>
+      </section>
     </section>
   );
 };

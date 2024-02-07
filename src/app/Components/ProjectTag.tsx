@@ -1,5 +1,4 @@
 import React from "react";
-
 interface IProps {
   name: string;
   onClick: (name: string) => void;
@@ -11,10 +10,9 @@ const ProjectTag = ({ name, onClick, isSelected }: IProps) => {
     ? "text-orange-500 border-cyan-500"
     : "text-cyan-400 border-cyan-950 hover:border-orange-700";
   return (
-    <button
-      className={`${buttonStyles} rounded-full border-2 px-6 py-3 text-xl cursor-pointer`}
-      onClick={() => onClick(name)}
-    >
+    <button  onClick={() => onClick(name)} 
+    className={`${buttonStyles} rounded-full border-2 
+    px-6 py-3 text-xl cursor-pointer`}>
       {name}
     </button>
   );
