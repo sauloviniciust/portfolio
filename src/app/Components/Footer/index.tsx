@@ -15,20 +15,19 @@ export const Footer = () => {
     <footer>
       <section className="bg-gradient-to-b from-stone-950 to-cyan-950 shadow-inner h-auto text-azul-200">
         <div className="grid lg:grid-cols-3 lg:text-2xl place-items-center text-center font-lighter text-xl  ">
-          <div className="flex justify-center w-56">
+          <div className="flex justify-center w-56 animate-pulse">
             <Image
               src="/logo.png"
               alt="DevSaulo image"
-              className=""
-              width={100}
-              height={100}
+             
             />
           </div>
 
           <p className="mb-6 sm:mx-20 lg:mx-0">
-            Page developed by Saulo Vinicius, developer and Fullstack
-            development student at Coderhouse, entirely made and edited with
-            NextJs, and Tailwind CSS.
+            Saulo Vinicius, developer and Fullstack student at Coderhouse.
+            <br />
+            Website entirely made and edited with NextJs, Typescript and
+            Tailwind.
           </p>
 
           <div>
@@ -37,22 +36,19 @@ export const Footer = () => {
                 <li className="text-orange-600 font-bold mb-2">
                   Fullstack Developer
                 </li>
-                <li>
-                  <i className="mb-2 fa-solid fa-location-dot"></i> Brazil, MG
+                
+                <li>Brazil, MG
                 </li>
                 <li>
-                 
                   <a
                     href="wa.link/fovx6s"
                     target="_blank"
                     className="mb-2 hover:text-orange-600 "
                   >
-                   
                     +55 31 9 8539-2710
                   </a>
                 </li>
                 <li>
-                 
                   <a
                     href="mailto:sauloviniciust@gmail.com"
                     target="_blank"

@@ -3,11 +3,25 @@ import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import {
+  FaReact,
+  FaNodeJs,
+  FaHtml5,
+  FaCss3Alt,
+  FaBootstrap,
+} from "react-icons/fa";
+import {
+  SiVite,
+  SiTypescript,
+  SiTailwindcss,
+  SiJavascript,
+} from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
 
 const HeroSection = () => {
   return (
     <section className="lg:py-16 mt-10">
-      <div className="grid grid-cols-1 sm:grid-cols-12">
+      <div className="grid grid-cols-1 md:grid-cols-12">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -42,13 +56,27 @@ const HeroSection = () => {
               repeat={Infinity}
             />
           </h1>
-          <p className="text-orange-600 text-sm sm:text-lg mb-6 lg:text-xl mr-2">
-          ReactJS | NextJS | Vitejs | Typescript | Tailwind |
-            JavaScript |  NodeJs | HTML5 | CSS | Bootstrap
-          </p>
+          <div className="flex flex-col gap-2 text-orange-600  mb-6 mr-2">
+            <p className="text-sm sm:text-lg lg:text-xl">
+              React | Next | Vite | Typescript | Node | Tailwind | JavaScript |
+              HTML5 | CSS | Bootstrap
+            </p>
+            <div className="flex gap-2 text-3xl md:text-4xl lg:text-5xl ">
+              <FaReact />
+              <TbBrandNextjs />
+              <SiVite />
+              <SiTypescript />
+              <FaNodeJs />
+              <SiTailwindcss /> <SiJavascript />
+              <FaHtml5 />
+              <FaCss3Alt />
+              <FaBootstrap />
+            </div>
+          </div>
           <div>
             <Link
-              href="https://github.com/sauloviniciust" target="blank"
+              href="https://github.com/sauloviniciust"
+              target="blank"
               className="px-6 font-bold inline-block py-3 w-full rounded-full mr-4 sm:w-fit  
               from-primary-500 to-secondary-500 bg-gradient-to-r from-cyan-800 to-cyan-400
             text-black hover:bg-gradient-to-l"
@@ -57,13 +85,15 @@ const HeroSection = () => {
             </Link>
             <Link
               href="https://www.linkedin.com/in/sauloviniciust/"
-              target="blank" className="px-1 inline-block py-1 w-full sm:w-fit rounded-full 
+              target="blank"
+              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full 
                  mt-3"
             >
               <span
-              className="px-6 font-bold inline-block py-3 w-full rounded-full mr-4 sm:w-fit  
+                className="px-6 font-bold inline-block py-3 w-full rounded-full mr-4 sm:w-fit  
               from-primary-500 to-secondary-500 bg-gradient-to-r from-cyan-400 to-cyan-800
-            text-black hover:bg-gradient-to-l">
+            text-black hover:bg-gradient-to-l"
+              >
                 Linkedin
               </span>
             </Link>
