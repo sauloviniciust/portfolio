@@ -12,11 +12,11 @@ interface ITabProps {
 }
 
 const TabButton: React.FC<ITabProps> = ({ active, selectTab, children }) => {
-  const buttonClasses = active ? "text-cyan-700" : "text-stone-500";
+  const buttonClasses = active ? "text-cyan-500" : "text-orange-700";
 
   return (
     <button onClick={selectTab}>
-      <p className={`mr-3 font-semibold hover:text-orange-600  ${buttonClasses}`}>
+      <p className={`mr-3 font-semibold hover:text-cyan-950  ${buttonClasses}`}>
         {children}
       </p>
       <motion.div

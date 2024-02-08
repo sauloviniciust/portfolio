@@ -19,7 +19,9 @@ export const Footer = () => {
             <Image
               src="/logo.png"
               alt="DevSaulo image"
-             
+              className=""
+              width={150}
+              height={150}
             />
           </div>
 
