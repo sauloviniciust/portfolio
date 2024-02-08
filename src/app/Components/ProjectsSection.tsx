@@ -16,12 +16,12 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "Koan dj page",
-    description: "dj/producer webpage",
-    image: "/images/projects/koan.png",
+    title: "Weatherly",
+    description: "This site provides meteorological informations",
+    image: "/images/projects/weatherly.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/sauloviniciust/koan",
-    previewUrl: "https://koan.vercel.app/",
+    gitUrl: "https://github.com/sauloviniciust/weatherly",
+    previewUrl: "https://appweatherlyapp.netlify.app/#/current-location",
   },
   {
     id: 2,
@@ -43,13 +43,14 @@ const projectsData = [
   // },
   {
     id: 5,
-    title: "Weatherly",
-    description: "This site provides meteorological informations",
-    image: "/images/projects/weatherly.png",
+    title: "Koan dj page",
+    description: "dj/producer webpage",
+    image: "/images/projects/koan.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/sauloviniciust/weatherly",
-    previewUrl: "https://appweatherlyapp.netlify.app/#/current-location",
-  },
+    gitUrl: "https://github.com/sauloviniciust/koan",
+    previewUrl: "https://koan.vercel.app/",
+  
+ },
   {
     id: 6,
     title: "Gitsearchub",
