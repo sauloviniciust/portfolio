@@ -25,9 +25,10 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Fullstack on CoderHouse School</li>
-        <li>TypeScript on Udemy</li>
-        <li>Tailwind on Udemy</li>
+        <li>Fullstack</li>
+        <li>TypeScript</li>
+        <li>Tailwind</li>
+        <li>Generative AI</li>
       </ul>
     ),
   },
@@ -37,7 +38,9 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>JavaScript</li>
+        <li>ReactJS</li>
         <li>Web-Developer</li>
+        <li>Foundations of generative AI</li>
       </ul>
     ),
   },
@@ -46,7 +49,6 @@ const TAB_DATA = [
 const AboutSection = () => {
   const [tab, setTab] = useState("skills");
   const [isPending, startTransition] = useTransition();
-
   const handleTabChange = (id: React.SetStateAction<string>) => {
     startTransition(() => {
       setTab(id);
@@ -55,10 +57,17 @@ const AboutSection = () => {
 
   return (
     <section className="text-stone-300" id="about">
-      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/aiphoto.png" width={500} height={500} alt={""} />
+      <div className="lg:grid lg:grid-cols-2 gap-8 items-center 
+                      py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+        <Image
+          className="sm:hidden lg:block"
+          src="/aiphoto.png"
+          width={500}
+          height={500}
+          alt={""}
+        />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold text-stone-400 mb-4">About Me</h2>
+          <h2 className="text-4xl font-bold text-cyan-600 mb-4">About Me</h2>
           <p className="text-base lg:text-lg ">
             I am currently a front-end developer who has successfully created
             high-performance and responsive web applications using HTML,
@@ -80,22 +89,19 @@ const AboutSection = () => {
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
             >
-              {" "}
-              Skills{" "}
+              Skills
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("education")}
               active={tab === "education"}
             >
-              {" "}
-              Education{" "}
+              Education
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("certifications")}
               active={tab === "certifications"}
             >
-              {" "}
-              Certifications{" "}
+              Certifications
             </TabButton>
           </div>
           <div className="mt-8">

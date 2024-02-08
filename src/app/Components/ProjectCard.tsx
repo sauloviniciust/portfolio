@@ -1,7 +1,6 @@
 import React from "react";
 import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
-
 interface IProps {
   imgUrl: string;
   title: string;
@@ -24,7 +23,7 @@ const ProjectCard = ({
         style={{ background: `url(${imgUrl})`, backgroundSize: "cover" }}
       >
         <div className="overlay items-center justify-center absolute top-0
-        left-0 w-full h-full bg-stone-950 bg-opacity-0 transition-all 
+        left-0 w-full h-full bg-neutral-950 bg-opacity-0 transition-all 
         group-hover:flex group-hover:bg-opacity-80 duration-500 hidden">
           <Link
             href={gitUrl}

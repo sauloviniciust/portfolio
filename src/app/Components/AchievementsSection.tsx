@@ -47,7 +47,7 @@ const AchievementsSection = () => {
                 <AnimatedNumbers
                   includeComma
                   animateToNumber={parseInt(achievement.value)}
-                  locale="en-US"
+                  locale="pt-BR"
                   className="text-stone-300 text-4xl font-bold"
                  
                 />

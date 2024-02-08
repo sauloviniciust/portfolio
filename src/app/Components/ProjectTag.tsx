@@ -7,8 +7,8 @@ interface IProps {
 
 const ProjectTag = ({ name, onClick, isSelected }: IProps) => {
   const buttonStyles = isSelected
-    ? "text-orange-500 border-cyan-500"
-    : "text-cyan-400 border-cyan-950 hover:border-orange-700";
+    ? "text-orange-500 bg-neutral-950 border-cyan-500"
+    : "text-cyan-400 bg-neutral-950 border-cyan-950 hover:border-orange-700";
   return (
     <button  onClick={() => onClick(name)} 
     className={`${buttonStyles} rounded-full border-2 

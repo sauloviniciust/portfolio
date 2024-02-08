@@ -1,5 +1,14 @@
+import {
+  FaGithub,
+  FaLinkedinIn,
+  FaInstagram,
+  FaGoogle,
+  FaWhatsapp,
+} from "react-icons/fa";
+
 import React from "react";
 import Image from "next/image";
+import { FaLocationDot } from "react-icons/fa6";
 
 export const Footer = () => {
   return (
@@ -17,7 +26,7 @@ export const Footer = () => {
           </div>
 
           <p className="mb-6 sm:mx-20 lg:mx-0">
-            Site developed by Saulo Vinicius, developer and Fullstack
+            Page developed by Saulo Vinicius, developer and Fullstack
             development student at Coderhouse, entirely made and edited with
             NextJs, and Tailwind CSS.
           </p>
@@ -25,22 +34,82 @@ export const Footer = () => {
           <div>
             <div>
               <ul>
-                
-                <li className="text-orange-500 font-bold mb-2">
+                <li className="text-orange-600 font-bold mb-2">
                   Fullstack Developer
                 </li>
                 <li>
-                  <i className="mb-2"></i> Brazil, MG
+                  <i className="mb-2 fa-solid fa-location-dot"></i> Brazil, MG
                 </li>
+                <li>
+                 
+                  <a
+                    href="wa.link/fovx6s"
+                    target="_blank"
+                    className="mb-2 hover:text-orange-600 "
+                  >
+                   
+                    +55 31 9 8539-2710
+                  </a>
+                </li>
+                <li>
+                 
+                  <a
+                    href="mailto:sauloviniciust@gmail.com"
+                    target="_blank"
+                    className="hover:text-orange-600"
+                  >
+                    sauloviniciust@gmail.com
+                  </a>
+                </li>
+
+                <div>
+                  <ul className="flex justify-center gap-9 text-2xl mb-3 mt-4">
+                    <li>
+                      <a
+                        href="https://github.com/sauloviniciust"
+                        target="_blank"
+                      >
+                        <FaGithub className="hover:text-orange-600" />
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.linkedin.com/in/sauloviniciust/"
+                        target="_blank"
+                      >
+                        <FaLinkedinIn className="hover:text-orange-600" />
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.instagram.com/sauloviniciust.dev/"
+                        target="_blank"
+                      >
+                        <FaInstagram className="hover:text-orange-600" />
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="mailto:sauloviniciust@gmail.com" target="_blank">
+                        <FaGoogle className="hover:text-orange-600" />
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="wa.link/fovx6s" target="_blank">
+                        <FaWhatsapp className="hover:text-orange-600" />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </ul>
             </div>
           </div>
         </div>
       </section>
-
       <section className="flex p-4 text-center font-lighter text-lg">
         <div className="mr-auto">
-          <small>SPACECHRONIX &copy;2014-2023 Psytrance MG | BR</small>
+          <small>Saulo.Dev &copy;2023-2024 Full-stack MG | BR</small>
         </div>
         <div>
           <small>Website created by Sauloviniciust &copy;2023 Copyright</small>
@@ -49,17 +118,3 @@ export const Footer = () => {
     </footer>
   );
 };
-
-//   <footer className="footer border z-10 border-stone-600 border-l-transparent border-r-transparent text-white">
-//   <div className="container p-12 flex justify-between">
-//   <Image
-//             src="/logo.png"
-//             alt="DevSaulo image"
-//             className=""
-//             width={100}
-//             height={100}
-//             />
-
-//     <p className="text-slate-600">All rights reserved.</p>
-//   </div>
-// </footer>

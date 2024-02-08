@@ -23,7 +23,7 @@ const HeroSection = () => {
               className="text-transparent bg-clip-text 
             bg-gradient-to-r from-cyan-300 to-cyan-800"
             >
-              Hello, I&apos;m{" "}
+              Hello, I&apos;m
             </span>
             <br></br>
             <TypeAnimation
@@ -42,7 +42,7 @@ const HeroSection = () => {
               repeat={Infinity}
             />
           </h1>
-          <p className="text-stone-400 text-sm sm:text-lg mb-6 lg:text-xl mr-2">
+          <p className="text-orange-600 text-sm sm:text-lg mb-6 lg:text-xl mr-2">
           ReactJS | NextJS | Vitejs | Typescript | Tailwind |
             JavaScript |  NodeJs | HTML5 | CSS | Bootstrap
           </p>

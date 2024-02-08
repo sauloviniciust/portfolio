@@ -1,11 +1,9 @@
 import React, { ReactNode } from 'react';
 import NavLink from "./NavLink";
-
 interface NavLinkItem {
   title: string;
   path: string;
 }
-
 interface MenuOverlayProps {
   links: NavLinkItem[];
 }
