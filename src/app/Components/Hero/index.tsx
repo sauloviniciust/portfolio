@@ -26,19 +26,14 @@ const HeroSection = () => {
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="col-span-8 place-self-center text-center 
-          sm:text-left justify-self-start"
-        >
-          <h1
-            className="text-stone-300 mb-4 text-4xl sm:text-5xl 
-          lg:text-8xl lg:leading-normal font-extrabold"
-          >
-            <span
-              className="text-transparent bg-clip-text 
-            bg-gradient-to-r from-cyan-300 to-cyan-800"
-            >
+          className="col-span-8 text-center sm:text-left">
+          <h1 className="text-stone-300 mb-4 text-4xl sm:text-5xl 
+                        lg:text-6xl lg:leading-normal font-extrabold">
+            
+          <span className="text-transparent bg-clip-text 
+            bg-gradient-to-r from-cyan-300 to-cyan-800">
               Hello, I&apos;m
-            </span>
+          </span>
             <br></br>
             <TypeAnimation
               sequence={[
@@ -62,12 +57,12 @@ const HeroSection = () => {
               repeat={Infinity}
             />
           </h1>
-          <div className="flex flex-col gap-2 text-orange-600  mb-6 mr-2">
+          <div className="flex flex-col gap-2 text-orange-600 mb-6 mr-2">
             <p className="text-sm sm:text-lg lg:text-xl">
               React | Next | Vite | Typescript | Node | Tailwind | JavaScript |
               HTML5 | CSS | Bootstrap
             </p>
-            <div className="flex gap-2 text-3xl md:text-4xl lg:text-5xl ">
+            <div className="flex gap-2 text-3xl md:text-4xl lg:text-5xl">
               <FaReact />
               <TbBrandNextjs />
               <SiVite />

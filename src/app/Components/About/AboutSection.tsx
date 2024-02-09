@@ -2,21 +2,80 @@
 import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import TabButton from "../TabButton";
+import { Items } from "../StylePresset/Items";
 
 const TAB_DATA = [
   {
     title: "Skills",
     id: "skills",
     content: (
-      <ul className="list-disc pl-2">
-        <li>React.js</li>
-        <li>Next.js</li>
-        <li>Vite.js</li>
-        <li>Node.js</li>
-        <li>TypeScript </li>
-        <li>Tailwind </li>
-        <li>JavaScript</li>
-        <li>Zustand</li>
+      <ul className="flex flex-wrap justify-center list-none gap-2 px-2">
+        <li>
+          <Items>React</Items>
+        </li>
+        <li>
+          <Items>Next.js</Items>
+        </li>
+        <li>
+          <Items>Vite.js</Items>
+        </li>
+        <li>
+          <Items>Node.js</Items>
+        </li>
+        <li>
+          <Items>TypeScript</Items>
+        </li>
+        <li>
+          <Items>Tailwind CSS</Items>
+        </li>
+        <li>
+          <Items>JavaScript</Items>
+        </li>
+        <li>
+          <Items>Zustand</Items>
+        </li>
+        <li>
+          <Items>HTML</Items>
+        </li>
+        <li>
+          <Items>CSS</Items>
+        </li>
+        <li>
+          <Items>VsCode</Items>
+        </li>
+        <li>
+          <Items>Front-End</Items>
+        </li>
+        <li>
+          <Items>Web Development</Items>
+        </li>
+        <li>
+          <Items>Git</Items>
+        </li>
+        <li>
+          <Items>Bash</Items>
+        </li>
+        <li>
+          <Items>Figma</Items>
+        </li>
+        <li>
+          <Items>Photoshop</Items>
+        </li>
+        <li>
+          <Items>Illustrator</Items>
+        </li>
+        <li>
+          <Items>Premiere</Items>
+        </li>
+        <li>
+          <Items>After Effects</Items>
+        </li>
+        <li>
+          <Items>Ableton</Items>
+        </li>
+        <li>
+          <Items>VCV Rack</Items>
+        </li>
       </ul>
     ),
   },
@@ -24,11 +83,16 @@ const TAB_DATA = [
     title: "Education",
     id: "education",
     content: (
-      <ul className="list-disc pl-2">
-        <li>Fullstack</li>
-        <li>TypeScript</li>
-        <li>Tailwind</li>
-        <li>Generative AI</li>
+      <ul className="flex flex-wrap justify-center list-none gap-2 px-2">
+        <li>
+          <Items>Full-Stack Development</Items>
+        </li>
+        <li>
+          <Items>Generative AI</Items>
+        </li>
+        <li>
+          <Items>TypeScript</Items>
+        </li>
       </ul>
     ),
   },
@@ -36,11 +100,19 @@ const TAB_DATA = [
     title: "Certifications",
     id: "certifications",
     content: (
-      <ul className="list-disc pl-2">
-        <li>JavaScript</li>
-        <li>ReactJS</li>
-        <li>Web-Developer</li>
-        <li>Foundations of generative AI</li>
+      <ul className="flex flex-wrap justify-center list-none gap-2 px-2">
+        <li>
+          <Items>React</Items>
+        </li>
+        <li>
+          <Items>JavaScript</Items>
+        </li>
+        <li>
+          <Items>Web Development</Items>
+        </li>
+        <li>
+          <Items>Foundations of generative AI</Items>
+        </li>
       </ul>
     ),
   },
@@ -57,8 +129,10 @@ const AboutSection = () => {
 
   return (
     <section className="text-stone-300" id="about">
-      <div className="lg:grid lg:grid-cols-2 gap-8 items-center 
-                      py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+      <div
+        className="lg:grid lg:grid-cols-2 gap-8 items-center 
+                      py-8 px-4 xl:gap-16 sm:py-16 xl:px-16"
+      >
         <Image
           className="hidden lg:block"
           src="/aiphoto.png"

@@ -28,6 +28,7 @@ const achievementsList = [
   {
     metric: "Years",
     value: "1",
+    postfix: "+",
   },
 ];
 
