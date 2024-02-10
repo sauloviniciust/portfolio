@@ -53,6 +53,9 @@ const TAB_DATA = [
           <Items>Git</Items>
         </li>
         <li>
+          <Items>Github</Items>
+        </li>
+        <li>
           <Items>Bash</Items>
         </li>
         <li>
@@ -116,6 +119,25 @@ const TAB_DATA = [
       </ul>
     ),
   },
+  {
+    title: "Languages",
+    id: "languages",
+    content: (
+      <ul className="flex flex-wrap justify-center list-none gap-2 px-2">
+        <li>
+        <Items>Portuguese - Native</Items>
+        </li>
+        <li>
+        <Items>English - intermediary</Items>
+        </li>
+        <li>
+        <Items>Spanish - intermediary</Items>
+        </li>
+      
+       
+      </ul>
+    ),
+  },
 ];
 
 const AboutSection = () => {
@@ -158,6 +180,8 @@ const AboutSection = () => {
             companies. Currently, I am expanding my skill set by studying
             Backend development and SQL at Coberhouse.
           </p>
+
+
           <div className="flex flex-row justify-start mt-8">
             <TabButton
               selectTab={() => handleTabChange("skills")}
@@ -176,6 +200,12 @@ const AboutSection = () => {
               active={tab === "certifications"}
             >
               Certifications
+            </TabButton>
+            <TabButton
+              selectTab={() => handleTabChange("languages")}
+              active={tab === "languages"}
+            >
+              Languages
             </TabButton>
           </div>
           <div className="mt-8">

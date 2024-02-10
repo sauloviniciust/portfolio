@@ -13,11 +13,11 @@ import { FaLocationDot } from "react-icons/fa6";
 export const Footer = () => {
   return (
     <footer>
-      <section className="bg-gradient-to-b from-stone-950 to-cyan-950 shadow-inner h-auto text-azul-200">
+      <section className="bg-gradient-to-b text-stone-400 from-stone-950 to-cyan-950 shadow-inner h-auto text-azul-200">
         <div className="grid lg:grid-cols-3 lg:text-2xl place-items-center text-center font-lighter text-xl  ">
           <div className="flex justify-center w-56 animate-pulse">
             <Image
-              src="/logo.png"
+              src="/saulodevedit.png"
               alt="DevSaulo image"
               className=""
               width={150}
@@ -25,7 +25,7 @@ export const Footer = () => {
             />
           </div>
 
-          <p className="mb-6 sm:mx-20 lg:mx-0">
+          <p className="mb-6 sm:mx-20 lg:mx-0 ">
             Saulo Vinicius, developer and Fullstack student at Coderhouse.
             <br />
             Website entirely made and edited with NextJs, Typescript and
@@ -105,7 +105,7 @@ export const Footer = () => {
           </div>
         </div>
       </section>
-      <section className="flex p-4 text-center font-lighter text-lg">
+      <section className="text-stone-400 flex p-4 text-center font-lighter text-lg">
         <div className="mr-auto">
           <small>Saulo.Dev &copy;2023-2024 Full-stack MG | BR</small>
         </div>

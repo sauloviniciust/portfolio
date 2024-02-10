@@ -42,14 +42,14 @@ export const Navbar = () => {
   };
    
   return (
-      <nav className={`flex place-content-between items-center text-white font-sans
+      <nav className={`flex place-content-between items-center text-stone-300 font-sans
       shadow-zinc-900 shadow-2xl hover:shadow-cyan-900 hover:shadow-lg  
       w-full fixed top-0 z-20 transition duration-1000 ease-in-out ${
         isScrolled ? "bg-black" : "bg-transparent"}`}>
-        <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto py-2">
+        <div className="flex px-4 container lg:py-4 flex-wrap items-center justify-between mx-auto py-2">
           <Link
             href={"/"}
-            className="text-2xl md:text-5xl text-white font-semibold hover:animate-pulse"
+            className="text-2xl md:text-5xl text-stone-300 font-semibold hover:animate-pulse"
             >
            <Image
               src="/logo01.png"
@@ -63,14 +63,14 @@ export const Navbar = () => {
             {!navbarOpen ? (
               <button
                 onClick={() => setNavbarOpen(true)}
-                className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
+                className="flex items-center px-3 py-2 border rounded border-stone-200 text-stone-200 hover:text-stone-300 hover:border-stone-300"
               >
                 <Bars3Icon className="h-5 w-5" />
               </button>
             ) : (
               <button
                 onClick={() => setNavbarOpen(false)}
-                className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
+                className="flex items-center px-3 py-2 border rounded border-stone-200 text-stone-200 hover:text-stone-300 hover:border-stone-300"
               >
                 <XMarkIcon className="h-5 w-5" />
               </button>
