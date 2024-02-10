@@ -34,7 +34,7 @@ Front End | ReactJS | NextJS | Vitejs | TypeScript | Tailwind | JavaScript | Nod
 <meta property="og:title" content="SauloVinicius - Front End Developer Portfolio" />
 <meta property="og:description" content="Professional portfolio from Saulo Vinicius.
 Front End | ReactJS | NextJS | Vitejs | TypeScript | Tailwind | JavaScript | NodeJs | HTML5 | CSS | Bootstrap" />
-<meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+<meta property="og:image" content="https://64.media.tumblr.com/94bc320a616a4e63a4868a3126cfbaac/42ac2c08a370fdc3-ea/s540x810/cc758cfe53027cb69422ca0b2fa79b56caadc15e.pnj" />
 
 {/* <!-- Twitter --> */}
 <meta property="twitter:card" content="summary_large_image" />
@@ -42,7 +42,7 @@ Front End | ReactJS | NextJS | Vitejs | TypeScript | Tailwind | JavaScript | Nod
 <meta property="twitter:title" content="SauloVinicius - Front End Developer Portfolio" />
 <meta property="twitter:description" content="Professional portfolio from Saulo Vinicius.
 Front End | ReactJS | NextJS | Vitejs | TypeScript | Tailwind | JavaScript | NodeJs | HTML5 | CSS | Bootstrap" />
-<meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+<meta property="twitter:image" content="https://64.media.tumblr.com/94bc320a616a4e63a4868a3126cfbaac/42ac2c08a370fdc3-ea/s540x810/cc758cfe53027cb69422ca0b2fa79b56caadc15e.pnj" />
 
 {/* <!-- Meta Tags Generated with https://metatags.io --> */}
       </head>
