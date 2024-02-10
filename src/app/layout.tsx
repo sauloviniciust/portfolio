@@ -20,7 +20,31 @@ export default function RootLayout({
         <meta charSet="UTF-8" />
         <link rel="icon" type="image/x-icon" href="faviconsf.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>SauloViniciust</title>
+        
+
+        {/* <!-- Primary Meta Tags --> */}
+<title>SauloVinicius - Front End Developer Portfolio</title>
+<meta name="title" content="SauloVinicius - Front End Developer Portfolio" />
+<meta name="description" content="Professional portfolio from Saulo Vinicius.
+Front End | ReactJS | NextJS | Vitejs | TypeScript | Tailwind | JavaScript | NodeJs | HTML5 | CSS | Bootstrap" />
+
+{/* <!-- Open Graph / Facebook --> */}
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://metatags.io/" />
+<meta property="og:title" content="SauloVinicius - Front End Developer Portfolio" />
+<meta property="og:description" content="Professional portfolio from Saulo Vinicius.
+Front End | ReactJS | NextJS | Vitejs | TypeScript | Tailwind | JavaScript | NodeJs | HTML5 | CSS | Bootstrap" />
+<meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+
+{/* <!-- Twitter --> */}
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://metatags.io/" />
+<meta property="twitter:title" content="SauloVinicius - Front End Developer Portfolio" />
+<meta property="twitter:description" content="Professional portfolio from Saulo Vinicius.
+Front End | ReactJS | NextJS | Vitejs | TypeScript | Tailwind | JavaScript | NodeJs | HTML5 | CSS | Bootstrap" />
+<meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+
+{/* <!-- Meta Tags Generated with https://metatags.io --> */}
       </head>
       <body className={inter.className}>{children}</body>
     </html>
