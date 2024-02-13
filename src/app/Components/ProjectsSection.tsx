@@ -12,7 +12,7 @@ const projectsData = [
     image: "/images/projects/bodyl.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/sauloviniciust/bodylife",
-    previewUrl: "bodylife.vercel.app/",
+    previewUrl: "https://bodylife.vercel.app/",
   },
   {
     id: 2,
