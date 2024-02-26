@@ -47,12 +47,7 @@ const HeroSection = () => {
                 1000,
                 "Dreamer",
                 1000,
-                "Designer",
-                1000,
-                "Music Producer",
-                1000,
-                "Drummer",
-                1000,
+               
               ]}
               wrapper="span"
               speed={50}
