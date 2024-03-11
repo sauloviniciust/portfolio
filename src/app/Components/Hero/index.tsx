@@ -39,13 +39,13 @@ const HeroSection = () => {
               sequence={[
                 "Saulo",
                 1000,
-                "Brazilian",
+                "a Brazilian",
                 1000,
-                "Student",
+                "a Student",
                 1000,
-                "Full-stack Developer",
+                "a Full-stack Developer",
                 1000,
-                "Dreamer",
+                "a Dreamer",
                 1000,
                
               ]}
